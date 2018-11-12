@@ -52,7 +52,8 @@ class TemplateSendMessage(SendMessage):
                 'buttons': ButtonsTemplate,
                 'confirm': ConfirmTemplate,
                 'carousel': CarouselTemplate,
-                'image_carousel': ImageCarouselTemplate
+                'image_carousel': ImageCarouselTemplate,
+                'form': FormTemplate
             }
         )
 
@@ -68,7 +69,6 @@ class Template(with_metaclass(ABCMeta, Base)):
         super(Template, self).__init__(**kwargs)
 
         self.type = None
-
 
 class ButtonsTemplate(Template):
     """ButtonsTemplate.

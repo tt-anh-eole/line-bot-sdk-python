@@ -252,6 +252,19 @@ class BoxComponent(FlexComponent):
                 ))
         self.contents = new_contents
 
+class TextFieldComponent(FlexComponent):
+    def __init__(self, action=None, flex=None, margin=None, height=None, style=None, color=None,
+                gravity=None, **kwargs):
+
+        super(TextFieldComponent, self).__init__(**kwargs)
+        self.type = 'textfield'
+        self.flex = flex
+        self.margin = margin
+        self.height = height
+        self.style = style
+        self.color = color
+        self.gravity = gravity
+
 
 class ButtonComponent(FlexComponent):
     """ButtonComponent.
@@ -281,6 +294,19 @@ class ButtonComponent(FlexComponent):
         """
         super(ButtonComponent, self).__init__(**kwargs)
         self.type = 'button'
+        self.action = get_action(action)
+        self.flex = flex
+        self.margin = margin
+        self.height = height
+        self.style = style
+        self.color = color
+        self.gravity = gravity
+
+class EditTextComponent(FlexComponent):
+    def __init__(self, action=None, flex=None, margin=None, height=None, style=None, color=None,
+        gravity=None, **kwargs):
+        super(EditTextComponent, self).__init__(**kwargs)
+        self.type = 'edittext'
         self.action = get_action(action)
         self.flex = flex
         self.margin = margin

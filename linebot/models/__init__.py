@@ -65,7 +65,8 @@ from .flex_message import (  # noqa
     ImageComponent,
     SeparatorComponent,
     SpacerComponent,
-    TextComponent
+    TextComponent,
+    TextFieldComponent
 )
 from .imagemap import (  # noqa
     ImagemapSendMessage,
@@ -123,5 +124,5 @@ from .template import (  # noqa
     CarouselTemplate,
     CarouselColumn,
     ImageCarouselTemplate,
-    ImageCarouselColumn,
+    ImageCarouselColumn
 )
