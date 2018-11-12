@@ -66,7 +66,7 @@ from .flex_message import (  # noqa
     SeparatorComponent,
     SpacerComponent,
     TextComponent,
-    TextFieldComponent
+    EditTextComponent
 )
 from .imagemap import (  # noqa
     ImagemapSendMessage,
